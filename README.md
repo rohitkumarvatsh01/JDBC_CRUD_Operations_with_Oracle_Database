@@ -29,3 +29,25 @@ This Java web application is a robust demonstration of CRUD (Create, Read, Updat
 
 3. **Web Interface:**
    - The application boasts a user-friendly web interface for a delightful user experience.
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    color: #333;
+  }
+
+  p {
+    color: #555;
+  }
+
+  code {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+  }
+</style>
