@@ -23,10 +23,10 @@ public class LoginServlet extends HttpServlet {
 
 			try {
 			
-			Class.forName("oracle.jdbc.driver.OracleDriver");	
-			String JdbcURL="jdbc:oracle:thin:@172.16.2.7:1521:orcl";
-			String User="training";
-			String password="training";
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			String JdbcURL="jdbc:mysql://localhost:3306/Project";
+			String User="root";
+			String password="root";
 			Connection con=DriverManager.getConnection(JdbcURL,  User, password);
 			
 			String UserName=request.getParameter("UserName");
