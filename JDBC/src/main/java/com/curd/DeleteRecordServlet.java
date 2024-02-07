@@ -20,12 +20,11 @@ public class DeleteRecordServlet extends HttpServlet {
 	 
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			try {
-				
-				Class.forName("oracle.jdbc.driver.OracleDriver");	
-				String dbURL="jdbc:oracle:thin:@172.16.2.7:1521:orcl";
-				String dbUser="training";
-				String dbpassword="training";
-				Connection con=DriverManager.getConnection(dbURL,  dbUser, dbpassword);
+				Class.forName("com.mysql.cj.jdbc.Driver");	
+				String JdbcURL="jdbc:mysql://localhost:3306/Project";
+				String User="root";
+				String password="root";
+				Connection con=DriverManager.getConnection(JdbcURL,  User, password);
 				
 				String Name=request.getParameter("Name");
 				System.out.println(Name+" is Deleted Successful");
